@@ -14,6 +14,15 @@ body{
     align-items: center;
 }
 
+::selection{
+    background: black;
+    color: #fff5ef;
+}
+
+.review-stars::selection{
+    background: transparent;
+}
+
 .hero{
     /*background-color: #ffc0a1;*/
     background: linear-gradient(135deg, #fdaa81, #ffceb6);
@@ -190,7 +199,7 @@ a:hover{
 
 .review-section{
     background-color: #fff5ef;
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,4 +226,62 @@ a:hover{
     font-size: 24px;
     font-weight: 500;
     color: #fc9a69;
+}
+
+.newsletter-section{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-background{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    background: linear-gradient(135deg, #fdaa81, #ffceb6);
+    border-radius: 8px;
+    padding: 1.5em 5em;
+    color: #fff5ef;
+}
+
+.newsletter-heading{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.newsletter-par{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sign-up{
+    width: 150px;
+    height: 50px;
+    border: 2px solid #fff5ef;
+    border-radius: 8px;
+    background-color: #ffc7aa;
+    color: #fff5ef;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sign-up:hover{
+    background-color: #fff5ef;
+    color: #ffc0a1;
+}
+
+.copyright{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fc9a69;
+    color: #fff5ef;
+    font-size: 16px;
+    font-weight: 300;
 }
